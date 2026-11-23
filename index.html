@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4"><meta name="description" content="HomeCare Kenya care team prototype">
+  <title>HomeCare Kenya | Care workspace</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="prototype-banner"><span class="pulse"></span> PROTOTYPE · SIMULATED DATA <span class="banner-note">For product demonstration only — not a production clinical system</span></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="HomeCare Kenya home"><span class="brand-mark">h<span>+</span></span><span><b>homecare</b><small>KENYA</small></span></a>
+      <div class="workspace-label">CARE TEAM</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">◫</span> My workspace</button>
+        <button class="nav-item" data-view="patients"><span class="nav-icon">♧</span> My patients <span class="nav-count" id="patientCount">0</span></button>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▤</span> Visit reports <span class="nav-count" id="reportCount">0</span></button>
+        <button class="nav-item supervisor-only" data-view="supervisor"><span class="nav-icon">✓</span> Supervisor review <span class="nav-count" id="reviewCount">0</span></button>
+      </nav>
+      <div class="side-spacer"></div>
+      <div class="offline-card"><div class="offline-head"><span class="offline-dot"></span><b id="syncLabel">Online · all caught up</b></div><p id="syncDetail">Last synced just now</p><button id="offlineToggle" class="text-button">Simulate offline</button></div>
+      <div class="sidebar-foot"><span class="shield">◇</span><span>Access is limited to your assigned patients.<small>Demo access controls</small><button id="resetDemo" class="text-button">Reset demo data</button></span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button id="menuToggle" class="mobile-menu" aria-label="Open menu">☰</button><div class="crumb"><span>Care team</span><span class="crumb-sep">/</span><b id="crumbCurrent">My workspace</b></div><div class="top-actions"><div class="role-wrap"><span class="role-label">DEMO ROLE</span><select id="roleSelect" aria-label="Switch demo role"><option value="practitioner">Practitioner</option><option value="supervisor">Supervisor</option></select></div><div class="avatar" id="avatar">MW</div></div></header>
+      <section id="view-home" class="view"></section><section id="view-patients" class="view hidden"></section><section id="view-reports" class="view hidden"></section><section id="view-supervisor" class="view hidden"></section>
+      <footer class="page-footer">HomeCare Kenya <span>·</span> Demonstration workspace <span class="footer-right">Privacy-aware care coordination</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div><div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body></html>
