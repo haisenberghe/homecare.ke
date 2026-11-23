@@ -1,0 +1,2 @@
+{"name":"homecare-kenya-prototype","version":"1.0.0","private":true,"description":"Clickable HomeCare Kenya care team prototype with simulated data","scripts":{"start":"node server.js"},"engines":{"node":">=18"}}
+
