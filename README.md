@@ -23,4 +23,7 @@ Then open [http://127.0.0.1:4173](http://127.0.0.1:4173). No dependencies or acc
 - Simulate offline mode to see queued sync status. Prototype state is stored in this browser's local storage; use **Reset demo data** in the sidebar to restore the original sample state.
 
 Everything is simulated in the browser. Role switching and authorisation labels demonstrate the intended experience and are not security controls.
+## Hosted demo
+
+The live prototype is published at https://haisenberghe.github.io/homecare.ke/.
 
